@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.static('.')); // serves index.html from same folder
 
 // Your Anthropic API key - set this as environment variable
-const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY || 'YOUR_API_KEY_HERE';
+const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY || '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';
 
 app.post('/chat', async (req, res) => {
   try {
